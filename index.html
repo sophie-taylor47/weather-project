@@ -39,18 +39,27 @@
         </form>
         </div>
 
-          <div class="row" id="city-and-weather">
+         <div class="weather-info">
+          <div class="row">
             <div class="col-6">
-                <h2 class="city-name" id="city-name"></h2>
+              <span>
+                <h1 class="city-name" id="city-name"></h1>
+              </span>
               <ul>
                 <li>
                   <strong>
-                  Last updated: <span id="day"></span> <span id="time"></span></strong> 
+                  <span id="day"></span> <span id="time"></span>
                   <br />
                   <span id="date"></span>
+                  </strong> 
                 </li>
-                </ul>
-              
+                <li>
+                  <div class="weather-description" id="weather-description"></div>
+                  Humidity: <span class="humidity" id="humidity"></span>, Wind:
+                  <span class = "wind-speed" id="wind-speed"></span>
+                </li>
+              </ul>
+            </div>
             <div class="col-6" >
               <div class="temperature-container d-flex justify-content-end">
                 <image 
@@ -59,20 +68,13 @@
                 <div> 
                   <span class="temperature" id="temperature"></span>
                   <span class="units"
-                    ><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
+                    ><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span
+                  >
                 </div>
               </div>
+            </div>
+          </div>
         </div>
-
-            <div class="col-6">
-                    <div class="weather-description" id="weather-description">
-                  Humidity: <span class="humidity" id="humidity"></span>
-                  Wind: <span class = "wind-speed" id="wind-speed"></span>
-                </div>
-                </div>
-
-         </div>
-
         <br />
         <div class = "weather-forecast" id="weather-forecast">
         

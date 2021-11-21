@@ -73,11 +73,6 @@ button {
   text-align: center;
 }
 
-.col-6 {
-  float: left;
-  width: 50%;
-}
-
 .row:after {
   content: "";
   display: table;
