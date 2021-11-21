@@ -23,50 +23,34 @@
       <h1>☀️Weather App☀️</h1>
       <div class="weather-app">
         <form id="search-form">
-          <div class="row">
-            <div class="col-9">
-              <input
+          <input
             type="text"
             placeholder="Please enter a City..."
             class="shadow-sm"
             id="search-input"
           />
-            </div>
-            <button
+          <button
             class="searchButton shadow-sm"
             id="button-search"
             type="submit"
           >
             🔎 Search
           </button>
-
-          <button class="btn btn-success w-100" id="current-location-button">
-            📍 Current Location
-          </button>
-          </div>
         </form>
+        </div>
 
-        <div class="weather-info">
-          <div class="row">
+          <div class="row" id="city-and-weather">
             <div class="col-6">
-              <span>
                 <h2 class="city-name" id="city-name"></h2>
-              </span>
               <ul>
                 <li>
                   <strong>
-                  <span id="day"></span> <span id="time"></span>
+                  Last updated: <span id="day"></span> <span id="time"></span></strong> 
                   <br />
                   <span id="date"></span>
-                  </strong> 
                 </li>
-                <li>
-                  <div class="weather-description" id="weather-description"></div>
-                  Humidity: <span class="humidity" id="humidity"></span>, Wind:
-                  <span class = "wind-speed" id="wind-speed"></span>
-                </li>
-              </ul>
-            </div>
+                </ul>
+              
             <div class="col-6" >
               <div class="temperature-container d-flex justify-content-end">
                 <image 
@@ -75,16 +59,39 @@
                 <div> 
                   <span class="temperature" id="temperature"></span>
                   <span class="units"
-                    ><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span
-                  >
+                    ><a href="#" id="celsius-link" class="active">°C</a> | <a href="#" id="fahrenheit-link">°F</a></span>
                 </div>
               </div>
-            </div>
-          </div>
         </div>
+
+            <div class="col-6">
+                    <div class="weather-description" id="weather-description">
+                  Humidity: <span class="humidity" id="humidity"></span>
+                  Wind: <span class = "wind-speed" id="wind-speed"></span>
+                </div>
+                </div>
+
+         </div>
+
         <br />
         <div class = "weather-forecast" id="weather-forecast">
         
+          <small class="footer">
+          <a
+          href="https://github.com/sophie-taylor47/weather-project"
+          target="_blank"
+          class="link"
+        >
+          Open-source code
+        </a>
+        by
+        <a
+          href="https://www.linkedin.com/in/sophie-t-300434b2/"
+          class="linked-in"
+        >
+          Sophie Taylor
+        </a>
+          </small>
         </div>
       </div>
     </div>

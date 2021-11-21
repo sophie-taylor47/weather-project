@@ -11,30 +11,30 @@ let days = [
 ];
 let dayIndex = currentDate.getDay();
 let currentDay = days[dayIndex];
-document.querySelector("#day").innerHTML = `${currentDay},`;
+document.querySelector("#day").innerHTML = `${currentDay}`;
 
 //Get current date
 function formatDate() {
   let currentDOM = currentDate.getDate(); //day of month
   let currentYear = currentDate.getFullYear();
   let months = [
-    "January",
-    "February",
-    "March",
-    "April",
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
     "May",
     "June",
     "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "Decemeber",
+    "Aug",
+    "Sept",
+    "Oct",
+    "Nov",
+    "Dec",
   ];
   let monthIndex = currentDate.getMonth();
   let currentMonth = months[monthIndex];
 
-  return `${currentDOM}th ${currentMonth} ${currentYear}`;
+  return `${currentDOM} ${currentMonth} ${currentYear}`;
 }
 
 let dateElement = document.querySelector("#date");
@@ -185,7 +185,6 @@ function displayFahrenheitTemp(event) {
 }
 let clickFahrenheit = document.querySelector("#fahrenheit-link");
 clickFahrenheit.addEventListener("click", displayFahrenheitTemp);
-//
 
 let celsiusTemp = null;
 let forecast = null;
@@ -195,24 +194,3 @@ searchCountry.addEventListener("submit", submitCountry);
 
 searchCity("London");
 
-//currentlocation
-function searchLocation(position) {
-  let apiKey = "cda7455f017a25e76c2aa1f8943d682c";
-  let lat = position.coords.latitude;
-  let lon = position.coords.longitude;
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
-  axios.get(apiUrl).then(displayWeather);
-}
-
-function getCurrentLocation(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(searchLocation);
-}
-
-let form = document.querySelector("#search-form");
-form.addEventListener("submit", handleSubmit);
-
-let currentLocationBtn = document.querySelector("#current-location-button");
-currentLocationBtn.addEventListener("click", getCurrentLocation);
-
-searchCity("London");
