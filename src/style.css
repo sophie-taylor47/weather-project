@@ -1,0 +1,179 @@
+body {
+  margin-top: -40px;
+  width: 100%;
+  height: 100vh;
+  color: #ffff;
+  background: linear-gradient(-100deg, #f1a28a, #e795b4, #83cce7, #a1ecdb);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 15s ease-in-out infinite;
+  font-family: "Montserrat", sans-serif;
+}
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+form {
+  margin-top: 10px;
+  left: 30px;
+  top: 10px;
+}
+
+input {
+  color: #dfd7d7;
+  margin-top: 5px;
+  margin-right: 5px;
+  font-size: 18px;
+  line-height: 2;
+  border: 2px solid #006a71;
+  border-radius: 5px;
+}
+
+button {
+  color: #006a71;
+  margin-top: 5px;
+  margin-right: 5px;
+  font-size: 18px;
+  line-height: 2;
+  border: 2px solid #006a71;
+  border-radius: 5px;
+  display: inline;
+}
+
+.current-location-button {
+  color: #006a71;
+  margin-top: 5px;
+  margin-right: 5px;
+  font-size: 18px;
+  line-height: 2;
+  border: 2px solid #006a71;
+  border-radius: 5px;
+}
+
+.container {
+  background: rgb(251, 202, 63);
+  background: radial-gradient(
+    circle,
+    rgba(238, 205, 97, 0.909) 0%,
+    rgb(236, 211, 164) 100%
+  );
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 1px 20px rgb(0 0 0 / 30%);
+  color: #006a71;
+  font-family: "Quicksand", sans-serif;
+  max-width: 90%;
+  margin: 80px auto;
+  padding: 15px;
+}
+
+.heading,
+h5 {
+  text-align: center;
+}
+
+.col-6 {
+  float: left;
+  width: 33.33%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+li {
+  list-style: none;
+}
+
+.row {
+  padding: 25px;
+}
+
+.current-icon {
+  max-width: 100px;
+  margin-right: 20px;
+}
+
+.units {
+  display: inline;
+  font-weight: 50px;
+}
+
+a {
+  text-align: top;
+  margin: none;
+  text-decoration: none;
+  color: #006a71;
+}
+
+h2 {
+  display: inline;
+}
+
+ul {
+  margin-top: 50;
+  padding: 0;
+}
+
+.extra-info {
+  margin-top: 1500;
+}
+
+.weather-temperature .active {
+  color: rgb(38, 120, 241);
+  font-weight: 1000;
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
+
+.weather-description {
+  text-transform: capitalize;
+}
+
+.col-4 {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.weatherEmoji {
+  font-size: 50px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+  color: #006a71;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: #006a71;
+}
+
+.forecast-temperature-min {
+  opacity: 0.7;
+  padding: 5px;
+}
+
+.forecast-temperature-max .temperature {
+  font-weight: bold;
+}
