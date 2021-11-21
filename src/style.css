@@ -92,6 +92,12 @@ li {
   font-weight: 50px;
 }
 
+.col-6 {
+  float: left;
+  max-width: 40%;
+  padding: 15px;
+}
+
 a {
   text-align: top;
   margin: none;
@@ -100,7 +106,7 @@ a {
 }
 
 h2 {
-  display: inline;
+  font-weight: bolder;
 }
 
 ul {
@@ -124,16 +130,6 @@ ul {
 
 .weather-description {
   text-transform: capitalize;
-}
-
-.col-4 {
-  float: left;
-  width: 20%;
-  text-align: center;
-}
-
-.weatherEmoji {
-  font-size: 50px;
 }
 
 .weather-forecast {

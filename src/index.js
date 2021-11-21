@@ -97,6 +97,14 @@ function getSearchTemp(response) {
   );
   weatherIconElement.setAttribute("alt", response.data.weather[0].description);
 
+  let temperatureMaxToday = Math.round(response.data.main.temp_max);
+  let temperatureMaxTodayElement = document.querySelector("#max-temp");
+  temperatureMaxTodayElement.innerHTML = `${temperatureMaxToday}°`;
+
+  let temperatureMinToday = Math.round(response.data.main.temp_min);
+  let temperatureMinTodayElement = document.querySelector("#min-temp");
+  temperatureMinTodayElement.innerHTML = `${temperatureMinToday}°`;
+
   getForecast(response.data.coord);
 }
 //Display daily forecast temperatures
