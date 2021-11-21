@@ -114,8 +114,8 @@ ul {
   padding: 0;
 }
 
-.extra-info {
-  margin-top: 1500;
+small {
+  text-align: center;
 }
 
 .weather-temperature .active {

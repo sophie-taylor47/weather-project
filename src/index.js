@@ -201,4 +201,3 @@ let searchCountry = document.querySelector("#search-form");
 searchCountry.addEventListener("submit", submitCountry);
 
 searchCity("London");
-
